@@ -1,5 +1,5 @@
 import "./App.css";
-import PersonList from "./components/PersonList";
+import PlanetList from "./components/PlanetList";
 
 function App() {
 	return (
@@ -8,7 +8,7 @@ function App() {
 				<h1 className="text-3xl overline flex-shrink mb-10 uppercase font-extrabold border-t-4">
 					Aloha!
 				</h1>
-				<PersonList />
+				<PlanetList />
 			</header>
 		</div>
 	);

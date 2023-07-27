@@ -1,4 +1,4 @@
-const planets = [
+export const planets = [
 	{ id: 1, name: "Mercury", isGasPlanet: true },
 	{ id: 2, name: "Venus", isGasPlanet: true },
 	{ id: 3, name: "Earth", isGasPlanet: false },
@@ -8,4 +8,3 @@ const planets = [
 	{ id: 7, name: "Uranus", isGasPlanet: true },
 	{ id: 8, name: "Neptunus", isGasPlanet: true },
 ];
-export default planets;
