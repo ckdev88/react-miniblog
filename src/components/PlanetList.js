@@ -3,8 +3,14 @@ import Planet from "./Planet";
 
 export default function List() {
 	const gasPlanets = planets.filter((planet) => planet.isGasPlanet);
-	const listItems = gasPlanets.map((planet) => {
-		return <Planet name={planet.name} />;
-	});
-	return listItems;
+	return (
+		<div>
+			<h2 className="font-extrabold underline">Gas planets</h2>
+			<ul>
+				{gasPlanets.map((planet) => {
+					return <Planet name={planet.name} />;
+				})}
+			</ul>
+		</div>
+	);
 }
