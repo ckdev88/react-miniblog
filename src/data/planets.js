@@ -1,10 +1,11 @@
-export const planets = [
-	{ name: "Mercury", isGasPlanet: true },
-	{ name: "Venus", isGasPlanet: true },
-	{ name: "Earth", isGasPlanet: false },
-	{ name: "Mars", isGasPlanet: false },
-	{ name: "Jupiter", isGasPlanet: true },
-	{ name: "Saturn", isGasPlanet: false },
-	{ name: "Uranus", isGasPlanet: true },
-	{ name: "Neptunus", isGasPlanet: true },
+const planets = [
+	{ id: 1, name: "Mercury", isGasPlanet: true },
+	{ id: 2, name: "Venus", isGasPlanet: true },
+	{ id: 3, name: "Earth", isGasPlanet: false },
+	{ id: 4, name: "Mars", isGasPlanet: false },
+	{ id: 5, name: "Jupiter", isGasPlanet: true },
+	{ id: 6, name: "Saturn", isGasPlanet: false },
+	{ id: 7, name: "Uranus", isGasPlanet: true },
+	{ id: 8, name: "Neptunus", isGasPlanet: true },
 ];
+export default planets;
