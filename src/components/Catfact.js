@@ -17,7 +17,7 @@ const Catfact = (props) => {
 			>
 				Get random cat "fact"
 			</button>
-			<p>{catfact}</p>
+			<p className="my-6">{catfact}</p>
 		</div>
 	);
 };
