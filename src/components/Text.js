@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const Text = (props) => {
 	const [text, setText] = useState("");
 	useEffect(() => {
-		console.log("COMPONENT TEXT MOUNTED");
+		console.log("COMPONENT MOUNTED");
 
 		return () => {
 			console.log("COMPONENT UNMOUNTED");
