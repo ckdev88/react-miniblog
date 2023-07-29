@@ -25,10 +25,7 @@ const Agefetch = () => {
 					console.log(event.target.value);
 				}}
 			/>
-			<button
-				className="App rounded-md p-1 bg-green-600 ml-3"
-				onClick={fetchAge}
-			>
+			<button className="rounded-md p-1 bg-green-600 ml-3" onClick={fetchAge}>
 				Predict age
 			</button>
 			<p>

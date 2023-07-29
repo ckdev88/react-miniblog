@@ -12,7 +12,7 @@ const Catfact = (props) => {
 	return (
 		<div>
 			<button
-				className="rounded-md bg-green-800 hover:bg-green-900 p-1.5"
+				className="rounded-md bg-green-800 hover:bg-green-900 p-1.5 font-bold text-white"
 				onClick={fetchCatfact}
 			>
 				Get random cat "fact"

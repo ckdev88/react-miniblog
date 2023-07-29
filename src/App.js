@@ -1,18 +1,14 @@
 import "./App.css";
-import Catfact from "./components/Catfact";
-import Agefetch from "./components/Agefetch";
-
+import Pages from "./components/Pages";
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<h1 className="text-3xl overline flex-shrink mb-10 uppercase font-extrabold border-t-4">
+		<div className="App bg-zinc-200 h-100">
+			<header className="App-header py-4 mb-0 my-auto">
+				<strong className="text-3xl overline mb-2 uppercase font-extrabold block">
 					Aloha!
-				</h1>
-
-				<Catfact />
-				<Agefetch />
+				</strong>
 			</header>
+			<Pages />
 		</div>
 	);
 }

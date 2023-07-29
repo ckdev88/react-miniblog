@@ -41,7 +41,7 @@ export default function Tasks() {
 			/>
 			<button
 				onClick={addTask}
-				className="rounded-md py-1 px-1.5 ml-2 bg-black"
+				className="rounded-md py-1 px-1.5 ml-2 bg-black text-white"
 			>
 				Add task
 			</button>

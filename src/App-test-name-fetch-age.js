@@ -23,9 +23,9 @@ function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<h1 className="text-3xl overline flex-shrink mb-10 uppercase font-extrabold border-t-4">
+				<b className="text-3xl overline flex-shrink mb-10 uppercase font-extrabold border-t-4">
 					Aloha
-				</h1>
+				</b>
 				<input
 					type="text"
 					className="rounded-md bg-lime text-black p-1"
