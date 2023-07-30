@@ -1,6 +1,6 @@
 import ProfileChange from "./ProfileChange";
 import { useContext } from "react";
-import { AppContext } from "./Pages";
+import { AppContext } from "../App";
 
 const Profile = () => {
 	const { username, setUsername } = useContext(AppContext);

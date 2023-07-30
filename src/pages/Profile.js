@@ -1,6 +1,6 @@
 import Profile from "./../components/Profile";
 import { useContext } from "react";
-import { AppContext } from "../components/Pages";
+import { AppContext } from "../App";
 
 const ProfilePage = () => {
 	const { username, setUsername } = useContext(AppContext);
