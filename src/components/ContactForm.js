@@ -1,6 +1,6 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { useForm, useform } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 const ContactForm = () => {
 	const schema = yup.object().shape({
