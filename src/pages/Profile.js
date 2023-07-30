@@ -1,4 +1,5 @@
 import Profile from "./../components/Profile";
+import Agefetch from "./../pages/Agefetch";
 import { useContext } from "react";
 import { AppContext } from "../App";
 
@@ -7,6 +8,7 @@ const ProfilePage = () => {
 	return (
 		<>
 			<Profile username={username} setUsername={setUsername} />
+			<Agefetch />
 		</>
 	);
 };

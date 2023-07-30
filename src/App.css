@@ -17,9 +17,6 @@ body {
 	color: white;
 }
 
-input[type="text"] {
-	color: black;
-}
 h1 {
 	margin: 1rem 0;
 	font-size: 2rem;
@@ -34,7 +31,8 @@ h2 {
 	text-transform: uppercase;
 	text-shadow: -1px -1px 0px magenta;
 }
-button {
+button,
+input[type="submit"] {
 	padding: 0.25rem 0.5rem;
 	background-color: brown;
 	color: white;
@@ -43,10 +41,15 @@ button {
 	transition: 0.2s background-color ease-in-out;
 	margin: 0 0.25rem;
 }
-button:hover {
+button:hover,
+input[type="submit"]:hover {
 	background-color: black;
 }
-input[type="text"] {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+	color: black;
 	margin: 0 0.25rem;
 	padding: 0.25rem 0.5rem;
 	background-color: zinc;
@@ -54,4 +57,12 @@ input[type="text"] {
 }
 p {
 	margin: 1rem 0;
+}
+label {
+	cursor: pointer;
+}
+p.form-error {
+	top: 0;
+	right: 0;
+	display: block;
 }

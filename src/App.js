@@ -12,8 +12,8 @@ function App() {
 		<QueryClientProvider client={client}>
 			<AppContext.Provider value={{ username, setUsername }}>
 				<div className="App bg-zinc-200 h-100">
-					<header className="App-header py-4 mb-0 my-auto">
-						<strong className="text-3xl overline mb-2 uppercase font-extrabold block">
+					<header className="App-header py-3 mb-0 my-auto">
+						<strong className="text-3xl overline uppercase font-extrabold block">
 							Aloha!
 						</strong>
 					</header>

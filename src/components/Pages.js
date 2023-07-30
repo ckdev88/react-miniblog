@@ -10,6 +10,7 @@ import PersonList from "../pages/PersonList";
 import PlanetList from "../pages/PlanetList";
 import Tasks from "../pages/Tasks";
 import Profile from "../pages/Profile";
+import Contact from "../pages/Contact";
 
 export default function Pages() {
 	return (
@@ -25,6 +26,7 @@ export default function Pages() {
 					<Route path="/planetlist" element={<PlanetList />} />
 					<Route path="/tasks" element={<Tasks />} />
 					<Route path="/profile" element={<Profile />} />
+					<Route path="/contact" element={<Contact />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>

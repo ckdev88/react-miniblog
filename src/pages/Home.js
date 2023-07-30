@@ -17,7 +17,7 @@ export default function Home() {
 		<main>
 			<h1>Aloha!</h1>
 
-			<h2>Cat fact of the day</h2>
+			<h2>Here, have a cat fact!</h2>
 			{isLoading && <p>...</p>}
 			{isError && <p>Oeps, foutje?</p>}
 			<p>{catData?.fact}</p>
