@@ -1,3 +1,3 @@
-export default function Home() {
-	return <div>Dit is de homepage</div>;
+export default function Home(props) {
+	return <h1>Aloha {props.username}!</h1>;
 }

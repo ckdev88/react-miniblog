@@ -1,4 +1,9 @@
 import PlanetList from "./../components/PlanetList";
 export default function () {
-	return <PlanetList />;
+	return (
+		<>
+			<h1>Planets!</h1>
+			<PlanetList />
+		</>
+	);
 }

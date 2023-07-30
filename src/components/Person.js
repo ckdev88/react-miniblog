@@ -1,4 +1,4 @@
-const Person = (props) => {
+export default function Person(props) {
 	const gender = props.gender;
 	if (gender === "F") {
 		return (
@@ -19,5 +19,4 @@ const Person = (props) => {
 			</li>
 		);
 	}
-};
-export default Person;
+}

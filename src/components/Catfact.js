@@ -11,12 +11,7 @@ const Catfact = (props) => {
 	};
 	return (
 		<div>
-			<button
-				className="rounded-md bg-green-800 hover:bg-green-900 p-1.5 font-bold text-white"
-				onClick={fetchCatfact}
-			>
-				Get random cat "fact"
-			</button>
+			<button onClick={fetchCatfact}>Get it now!</button>
 			<p className="my-6">{catfact}</p>
 		</div>
 	);

@@ -19,15 +19,13 @@ const Agefetch = () => {
 			<input
 				type="text"
 				className="rounded-md bg-lime text-black p-1"
-				placeholder="Ex. Sjaak..."
+				placeholder="Type your name"
 				onChange={(event) => {
 					setName(event.target.value);
 					console.log(event.target.value);
 				}}
 			/>
-			<button className="rounded-md p-1 bg-green-600 ml-3" onClick={fetchAge}>
-				Predict age
-			</button>
+			<button onClick={fetchAge}>Predict age</button>
 			<p>
 				<br />
 				<br />
