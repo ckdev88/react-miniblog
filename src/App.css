@@ -3,6 +3,9 @@ html {
 	padding: 0;
 	margin: 0;
 }
+body {
+	font-size: 16px;
+}
 .App {
 	text-align: center;
 	min-height: 100vh;
@@ -16,4 +19,39 @@ html {
 
 input[type="text"] {
 	color: black;
+}
+h1 {
+	margin: 1rem 0;
+	font-size: 2rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 1px cyan;
+}
+h2 {
+	margin: 1rem 0;
+	font-size: 1.25rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-shadow: -1px -1px 0px magenta;
+}
+button {
+	padding: 0.25rem 0.5rem;
+	background-color: brown;
+	color: white;
+	border-radius: 0.5rem;
+	font-weight: bold;
+	transition: 0.2s background-color ease-in-out;
+	margin: 0 0.25rem;
+}
+button:hover {
+	background-color: black;
+}
+input[type="text"] {
+	margin: 0 0.25rem;
+	padding: 0.25rem 0.5rem;
+	background-color: zinc;
+	border-radius: 0.5rem;
+}
+p {
+	margin: 1rem 0;
 }
