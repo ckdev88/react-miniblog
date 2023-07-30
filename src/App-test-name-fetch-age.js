@@ -9,7 +9,6 @@ function App() {
 		setName(event.target.value);
 	};
 	const fetchAge = () => {
-		console.log({ name });
 		fetch("https://api.agify.io/?name=" + name)
 			.then((res) => res.json())
 			.then((data) => {
@@ -39,11 +38,7 @@ function App() {
 					Predict age
 				</button>
 				<p>
-					--
-					<br />
-					Predicted age of {name}:
-					<br />
-					{age}
+					Predicted age of {name}: {age}
 				</p>
 			</header>
 		</div>

@@ -27,9 +27,7 @@ const Agefetch = () => {
 			/>
 			<button onClick={fetchAge}>Predict age</button>
 			<p>
-				<br />
-				<br />
-				Predicted age of {name}: {age}
+				Predicted age of <b>{name}</b>: {age}
 			</p>
 		</div>
 	);

@@ -11,5 +11,10 @@ export default function List() {
 			profession={person.profession}
 		/>
 	));
-	return <ul>{listItems}</ul>;
+	return (
+		<>
+			<h1>List of peoples</h1>
+			<ul>{listItems}</ul>
+		</>
+	);
 }
