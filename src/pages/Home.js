@@ -1,3 +1,6 @@
-export default function Home(props) {
-	return <h1>Aloha {props.username}!</h1>;
+import { useContext } from "react";
+import { AppContext } from "../components/Pages";
+export default function Home() {
+	const { username } = useContext(AppContext);
+	return <h1>Aloha {username}!</h1>;
 }

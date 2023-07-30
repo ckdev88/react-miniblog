@@ -1,9 +1,13 @@
 import { useState } from "react";
-const ProfileChange = (props) => {
+import { useContext } from "react";
+import { AppContext } from "./Pages";
+
+const ProfileChange = () => {
+	const { username, setUsername } = useContext(AppContext);
 	const [newUsername, setNewUsername] = useState("");
 	const [status, setStatus] = useState("");
 	const updateUsername = (newUsername) => {
-		props.setUsername(newUsername);
+		setUsername(newUsername);
 		setStatus("Updated!");
 	};
 	return (

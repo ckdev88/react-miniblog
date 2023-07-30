@@ -1,8 +1,12 @@
 import Profile from "./../components/Profile";
-const ProfilePage = (props) => {
+import { useContext } from "react";
+import { AppContext } from "../components/Pages";
+
+const ProfilePage = () => {
+	const { username, setUsername } = useContext(AppContext);
 	return (
 		<>
-			<Profile username={props.username} setUsername={props.setUsername} />
+			<Profile username={username} setUsername={setUsername} />
 		</>
 	);
 };
