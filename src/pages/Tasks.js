@@ -1,5 +1,5 @@
 import Tasks from "./../components/Tasks";
-export default function () {
+export default function TasksPage() {
 	return (
 		<>
 			<h1>Tasks & todo stuff</h1>
