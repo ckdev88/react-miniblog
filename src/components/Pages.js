@@ -30,7 +30,6 @@ export default function Pages() {
 						path="/profile"
 						element={<Profile username={username} setUsername={setUsername} />}
 					/>
-					<Route path="/propdrilling" element={<Propdrilling />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>

@@ -27,9 +27,6 @@ export default function Navigation() {
 			<Link to="profile" className="mx-2">
 				Profile
 			</Link>
-			<Link to="propdrilling" className="mx-2">
-				Propdrilling?
-			</Link>
 		</nav>
 	);
 }

@@ -34,17 +34,8 @@ export default function Tasks() {
 
 	return (
 		<div>
-			<input
-				type="text"
-				onChange={handleChangeFunction}
-				className="p-1 rounded-md"
-			/>
-			<button
-				onClick={addTask}
-				className="rounded-md py-1 px-1.5 ml-2 bg-black text-white"
-			>
-				Add task
-			</button>
+			<input type="text" onChange={handleChangeFunction} />
+			<button onClick={addTask}>Add task</button>
 			<hr className="my-5" />
 			{todoList.map((task) => {
 				return (
