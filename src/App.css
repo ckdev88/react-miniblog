@@ -19,17 +19,25 @@ body {
 
 h1 {
 	margin: 1rem 0;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-weight: 800;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 1px cyan;
 }
 h2 {
-	margin: 1rem 0;
-	font-size: 1.25rem;
+	margin: 2rem 0 1rem;
+	font-size: 2rem;
 	font-weight: 800;
 	text-transform: uppercase;
 	text-shadow: -1px -1px 0px magenta;
+}
+h3 {
+	margin: 1rem 0;
+	font-size: 1.5rem;
+	font-weight: 600;
+	font-style: italic;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px white;
 }
 button,
 input[type="submit"] {
@@ -60,6 +68,9 @@ p {
 }
 label {
 	cursor: pointer;
+}
+main {
+	padding-top: 1rem;
 }
 p.form-error {
 	top: 0;

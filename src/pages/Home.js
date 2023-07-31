@@ -14,7 +14,7 @@ export default function Home() {
 	console.log({ catData });
 	// const { username } = useContext(AppContext);
 	return (
-		<main>
+		<>
 			<h1>Aloha!</h1>
 
 			<h2>Here, have a cat fact!</h2>
@@ -22,6 +22,6 @@ export default function Home() {
 			{isError && <p>Oeps, foutje?</p>}
 			<p>{catData?.fact}</p>
 			<button onClick={refetch}>Again!</button>
-		</main>
+		</>
 	);
 }

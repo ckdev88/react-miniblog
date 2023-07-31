@@ -9,20 +9,17 @@ export default function Navigation() {
 			<Link to="counter" className="mx-2">
 				Counter
 			</Link>
-			<Link to="personlist" className="mx-2">
-				Peoples
-			</Link>
-			<Link to="planetlist" className="mx-2">
-				Planets
-			</Link>
-			<Link to="tasks" className="mx-2">
-				Tasks
+			<Link to="lists" className="mx-2">
+				Lists
 			</Link>
 			<Link to="profile" className="mx-2">
 				Profile
 			</Link>
 			<Link to="contact" className="mx-2">
 				Contact
+			</Link>
+			<Link to="misc" className="mx-2">
+				Misc
 			</Link>
 		</nav>
 	);

@@ -16,6 +16,7 @@ const Agefetch = () => {
 	}, []);
 	return (
 		<div>
+			<h2>What's my age again?</h2>
 			<input
 				type="text"
 				className="rounded-md bg-lime text-black p-1"

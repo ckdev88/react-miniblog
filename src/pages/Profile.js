@@ -1,5 +1,5 @@
 import Profile from "./../components/Profile";
-import Agefetch from "./../pages/Agefetch";
+import Agefetch from "./../components/Agefetch";
 import { useContext } from "react";
 import { AppContext } from "../App";
 

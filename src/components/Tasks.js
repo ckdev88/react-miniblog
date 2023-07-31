@@ -33,7 +33,8 @@ export default function Tasks() {
 	};
 
 	return (
-		<div>
+		<>
+			<h2>Tasks & todo stuff</h2>
 			<input type="text" onChange={handleChangeFunction} />
 			<button onClick={addTask}>Add task</button>
 			<hr className="my-5" />
@@ -49,6 +50,6 @@ export default function Tasks() {
 				);
 			})}
 			<br />
-		</div>
+		</>
 	);
 }

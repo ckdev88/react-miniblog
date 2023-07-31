@@ -13,7 +13,7 @@ export default function List() {
 	));
 	return (
 		<>
-			<h1>List of peoples</h1>
+			<h2>List of peoples</h2>
 			<ul>{listItems}</ul>
 		</>
 	);
