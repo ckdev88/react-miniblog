@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { AppContext } from "../App";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
@@ -11,11 +13,10 @@ export default function Home() {
 		return axios.get("https://catfact.ninja/fact").then((res) => res.data);
 	});
 
-	console.log({ catData });
-	// const { username } = useContext(AppContext);
+	const { username } = useContext(AppContext);
 	return (
 		<>
-			<h1>Aloha!</h1>
+			<h1>Aloha {username}!</h1>
 
 			<h2>Here, have a cat fact!</h2>
 			{isLoading && <p>...</p>}
