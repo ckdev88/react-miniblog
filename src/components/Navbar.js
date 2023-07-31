@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navigation() {
 	return (
-		<nav className="block text-yellow-100 py-2 bg-slate-600 font-bold mb-4 uppercase">
+		<nav className="block py-2 bg-slate-500 font-bold mb-4 uppercase ">
 			<Link to="/" className="mx-2">
 				/
 			</Link>

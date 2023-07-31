@@ -77,3 +77,12 @@ p.form-error {
 	right: 0;
 	display: block;
 }
+nav a {
+	text-shadow: 2px 2px 0px white;
+	color: black;
+	transition: 0.05s text-shadow linear;
+	font-weight: 900;
+}
+nav a:hover {
+	text-shadow: -1px -1px 0 white;
+}
