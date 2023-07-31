@@ -3,7 +3,6 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import NotFound from "../pages/NotFound";
 import Home from "../pages/Home";
-import Counter from "../pages/Counter";
 import Profile from "../pages/Profile";
 import Contact from "../pages/Contact";
 import Lists from "../pages/Lists";
@@ -17,7 +16,6 @@ export default function Pages() {
 				<main>
 					<Routes>
 						<Route path="/" element={<Home />} />
-						<Route path="/counter" element={<Counter />} />
 						<Route path="/misc" element={<Misc />} />
 						<Route path="/profile" element={<Profile />} />
 						<Route path="/contact" element={<Contact />} />

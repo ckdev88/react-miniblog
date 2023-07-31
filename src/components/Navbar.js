@@ -6,9 +6,6 @@ export default function Navigation() {
 			<Link to="/" className="mx-2">
 				/
 			</Link>
-			<Link to="counter" className="mx-2">
-				Counter
-			</Link>
 			<Link to="lists" className="mx-2">
 				Lists
 			</Link>
