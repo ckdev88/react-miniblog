@@ -1,7 +1,7 @@
 import Person from "./Person";
 import { people } from "../data/people";
 
-export default function List() {
+const List = () => {
 	const listItems = people.map((person) => (
 		<Person
 			name={person.name}
@@ -17,4 +17,5 @@ export default function List() {
 			<ul>{listItems}</ul>
 		</>
 	);
-}
+};
+export default List;

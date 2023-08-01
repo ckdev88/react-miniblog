@@ -1,7 +1,7 @@
 import { planets } from "../data/planets";
 import Planet from "./Planet";
 
-export default function List() {
+const PlanetList = () => {
 	const gasPlanets = planets.filter((planet) => planet.isGasPlanet);
 	return (
 		<>
@@ -14,4 +14,5 @@ export default function List() {
 			</ul>
 		</>
 	);
-}
+};
+export default PlanetList;

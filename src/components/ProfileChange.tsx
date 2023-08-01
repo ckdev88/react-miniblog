@@ -6,7 +6,7 @@ const ProfileChange = () => {
 	const { username, setUsername } = useContext(AppContext);
 	const [newUsername, setNewUsername] = useState("");
 	const [status, setStatus] = useState("");
-	const updateUsername = (newUsername) => {
+	const updateUsername = (newUsername: string) => {
 		setUsername(newUsername);
 		setStatus("Updated!");
 	};

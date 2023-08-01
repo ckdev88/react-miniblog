@@ -1,3 +1,15 @@
+// interface people {
+// 	id: number;
+// 	name: string;
+// 	profession: string;
+// 	age: number;
+// 	gender: Gender;
+// }
+// enum Gender {
+// 	M = "M",
+// 	F = "F",
+// 	X = "X",
+// }
 export const people = [
 	{ id: 0, name: "Piet", profession: "mathematician", age: 55, gender: "M" },
 	{ id: 1, name: "Sandra", profession: "chemist", age: 24, gender: "F" },

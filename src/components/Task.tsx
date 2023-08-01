@@ -1,4 +1,12 @@
-export const Task = (props) => {
+interface Props {
+	id: number;
+	name: string;
+	isCompleted: boolean;
+	completeTask: any;
+	removeTask: any;
+}
+
+export const Task = (props: Props) => {
 	return (
 		<li className="my-3 list-none">
 			<span

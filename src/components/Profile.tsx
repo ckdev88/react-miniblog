@@ -7,7 +7,7 @@ const Profile = () => {
 	return (
 		<>
 			<h1>Welcome back {username}</h1>
-			<ProfileChange name={username} setUsername={setUsername} />
+			<ProfileChange />
 		</>
 	);
 };

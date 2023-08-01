@@ -1,7 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
-const Text = (props) => {
+interface Props {
+	text: string;
+	hideText: string;
+}
+
+const Text = (props: Props) => {
 	const [text, setText] = useState("");
 	useEffect(() => {
 		console.log("COMPONENT MOUNTED");

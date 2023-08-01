@@ -1,4 +1,11 @@
-export default function Person(props) {
+interface Props {
+	id: number;
+	name: string;
+	age: number;
+	gender: string;
+	profession: string;
+}
+const Person = (props: Props) => {
 	const gender = props.gender;
 	if (gender === "F") {
 		return (
@@ -19,4 +26,5 @@ export default function Person(props) {
 			</li>
 		);
 	}
-}
+};
+export default Person;

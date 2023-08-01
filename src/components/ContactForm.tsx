@@ -20,10 +20,14 @@ const ContactForm = () => {
 			.integer()
 			.max(150)
 			.required("Please provide your age."),
-		password: yup.string().max(30).required("Set a strong password."),
+		password: yup
+			.string()
+			.min(5, "Set a strong one")
+			.max(30)
+			.required("Set a strong password."),
 		confirmPassword: yup
 			.string()
-			.oneOf([yup.ref("password"), null], "Passwords must match.")
+			.oneOf([yup.ref("password")], "Passwords must match.")
 			.required("Type the same password."),
 	});
 	const {
@@ -34,21 +38,20 @@ const ContactForm = () => {
 		resolver: yupResolver(schema),
 	});
 
-	const onSubmit = (data) => {
+	const onSubmit: any = (data: []) => {
 		console.log(data);
 	};
-	console.log(errors);
 	return (
 		<form
 			className="grid mx-auto grid-cols-1 sm:grid-cols-2 sm:max-w-lg text-left gap-1"
 			onSubmit={handleSubmit(onSubmit)}
 		>
 			{errors.fullName && (
-				<div class="form-error text-red-700 col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
+				<div className="form-error text-red-700 col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
 					{errors.fullName.message}
 				</div>
 			)}
-			<label for="form-full-name" className="xs:hidden">
+			<label htmlFor="form-full-name" className="xs:hidden">
 				Full name
 			</label>
 			<input
@@ -58,11 +61,11 @@ const ContactForm = () => {
 				{...register("fullName")}
 			/>
 			{errors.email && (
-				<div class="form-error text-red-700  col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
+				<div className="form-error text-red-700  col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
 					{errors.email?.message}
 				</div>
 			)}
-			<label for="form-full-email" className="xs:hidden">
+			<label htmlFor="form-full-email" className="xs:hidden">
 				E-mail
 			</label>
 			<input
@@ -72,11 +75,11 @@ const ContactForm = () => {
 				{...register("email")}
 			/>
 			{errors.age && (
-				<div class="form-error text-red-700  col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
+				<div className="form-error text-red-700  col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
 					{errors.age?.message}
 				</div>
 			)}
-			<label for="form-full-age" className="xs:hidden">
+			<label htmlFor="form-full-age" className="xs:hidden">
 				Age
 			</label>
 			<input
@@ -87,11 +90,11 @@ const ContactForm = () => {
 				name="age"
 			/>
 			{errors.password && (
-				<div class="form-error text-red-700  col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
+				<div className="form-error text-red-700  col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
 					{errors.password?.message}
 				</div>
 			)}
-			<label for="form-full-password" className="xs:hidden">
+			<label htmlFor="form-full-password" className="xs:hidden">
 				Password
 			</label>
 			<input
@@ -101,11 +104,11 @@ const ContactForm = () => {
 				{...register("password")}
 			/>
 			{errors.confirmPassword && (
-				<div class="form-error text-red-700  col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
+				<div className="form-error text-red-700  col-span-2 text-right pb-0 mb-0 text-sm pr-1 pt-1">
 					{errors.confirmPassword?.message}
 				</div>
 			)}
-			<label for="form-confirm-password" className="xs:hidden">
+			<label htmlFor="form-confirm-password" className="xs:hidden">
 				Confirm password
 			</label>
 			<input

@@ -3,7 +3,11 @@ import Pages from "./components/Pages";
 import { useState, createContext } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-export const AppContext = createContext();
+type AppContextType = {
+	username: string;
+	setUsername: any;
+};
+export const AppContext = createContext<AppContextType>({} as AppContextType);
 
 function App() {
 	const client = new QueryClient();

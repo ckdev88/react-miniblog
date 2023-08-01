@@ -9,6 +9,9 @@ export default function Navigation() {
 			<Link to="lists" className="mx-2">
 				Lists
 			</Link>
+			<Link to="tracks" className="mx-2">
+				Tracks
+			</Link>
 			<Link to="profile" className="mx-2">
 				Profile
 			</Link>
