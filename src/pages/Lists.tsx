@@ -1,6 +1,6 @@
-import Tasks from "../components/Tasks";
-import PlanetList from "../components/PlanetList";
 import PersonList from "../components/PersonList";
+import PlanetList from "../components/PlanetList";
+import Tasks from "../components/Tasks";
 
 const Lists = () => {
 	return (

@@ -4,7 +4,6 @@ const Agefetch = () => {
 	const [age, setAge] = useState(0);
 
 	const fetchAge = () => {
-		console.log({ name });
 		fetch(`https://api.agify.io/?name=${name}`)
 			.then((res) => res.json())
 			.then((data) => {
@@ -23,7 +22,6 @@ const Agefetch = () => {
 				placeholder="Type your name"
 				onChange={(event) => {
 					setName(event.target.value);
-					console.log(event.target.value);
 				}}
 			/>
 			<button onClick={fetchAge}>Predict age</button>
