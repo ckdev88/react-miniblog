@@ -1,28 +1,23 @@
 import useToggle from "./hooks/useToggle";
 
 const Toggle = () => {
-	const { state, toggle } = useToggle(false);
-	// const { isRed, toggleRed } = useToggle(false); // kan zelfde effect niet vaker uitvoeren?
+	const { state: stateText, toggle: toggleText } = useToggle(false);
+	const { state: stateColor, toggle: toggleColor } = useToggle(false); // kan zelfde effect niet vaker uitvoeren?
 
-	// typeof (bla)=AnalyserNode;
-	const bla = () => {
-		return console.log("asdasdas");
-	};
 	return (
 		<div>
 			<h2>Toggler</h2>
-			<button onClick={toggle}>
-				{!state ? "Laat tekst zien" : "Verberg tekst"}
+			<button onClick={toggleText}>
+				{!stateText ? "Laat tekst zien" : "Verberg tekst"}
 			</button>
-			{state && (
+			{stateText && (
 				<>
-					{/* <p className={isRed && "text-red-600"}>
+					<p className={stateColor ? "text-red-600" : "text-black"}>
 						Deze tekst is om de test tekst te testen.
-					</p> */}
-					<p>Deze tekst is om de test tekst te testen.</p>
-					{/* <button onClick={toggleRed}>
-						{!isRed ? "Maak rood" : "Maak zwart"}
-					</button> */}
+					</p>
+					<button onClick={toggleColor}>
+						{!toggleColor ? "Maak rood" : "Maak zwart"}
+					</button>
 				</>
 			)}
 		</div>

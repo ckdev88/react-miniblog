@@ -9,7 +9,7 @@ const PlanetList = () => {
 			<h3 className="font-extrabold underline">Gas planets</h3>
 			<ul>
 				{gasPlanets.map((planet) => {
-					return <Planet name={planet.name} />;
+					return <Planet key={planet.id} name={planet.name} />;
 				})}
 			</ul>
 		</>

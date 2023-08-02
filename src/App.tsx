@@ -3,10 +3,10 @@ import Pages from "./components/Pages";
 import { useState, createContext } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-type AppContextType = {
+interface AppContextType {
 	username: string;
-	setUsername: any;
-};
+	setUsername(username: string): void;
+}
 export const AppContext = createContext<AppContextType>({} as AppContextType);
 
 function App() {

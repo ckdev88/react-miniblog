@@ -1,18 +1,22 @@
 import { SetStateAction, useState } from "react";
 import { Task } from "./Task";
 
-interface TodoList {
-	id: number;
-	task: any;
-}
-interface Task {
+// type TodoList = {
+// 	todoList: [];
+// 	setTodoList: [];
+// 	setTodoList(todoList: []): [];
+// };
+interface TaskInterface {
 	id: number;
 	taskName: string;
 	isCompleted: boolean;
 }
+// interface TaskInterface2 {
+// 	[]: any;
+// }
 
 export default function Tasks() {
-	const [todoList, setTodoList] = useState<any>([]);
+	const [todoList, setTodoList] = useState<TaskInterface[]>([]); // TODO: apply proper type/interface
 	const [newTask, setNewTask] = useState("");
 
 	const handleChangeFunction = (event: {
@@ -20,10 +24,9 @@ export default function Tasks() {
 	}) => {
 		setNewTask(event.target.value);
 	};
-	// interface TodoList: Array;
 
 	const addTask = () => {
-		const task: Task = {
+		const task: TaskInterface = {
 			id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
 			taskName: newTask,
 			isCompleted: false,
@@ -32,7 +35,7 @@ export default function Tasks() {
 	};
 	const completeTask = (taskId: number) => {
 		setTodoList(
-			todoList.map((task: any) => {
+			todoList.map((task: TaskInterface) => {
 				if (task.id === taskId) {
 					return { ...task, isCompleted: true }; // !
 				} else {
@@ -42,7 +45,7 @@ export default function Tasks() {
 		);
 	};
 	const removeTask = (taskId: number) => {
-		setTodoList(todoList.filter((task: any) => task.id !== taskId));
+		setTodoList(todoList.filter((task: TaskInterface) => task.id !== taskId));
 	};
 
 	return (
@@ -51,7 +54,7 @@ export default function Tasks() {
 			<input type="text" onChange={handleChangeFunction} />
 			<button onClick={addTask}>Add task</button>
 			<hr className="my-5" />
-			{todoList.map((task: any) => {
+			{todoList.map((task: TaskInterface) => {
 				return (
 					<Task
 						id={task.id}

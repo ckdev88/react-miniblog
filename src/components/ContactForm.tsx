@@ -38,7 +38,16 @@ const ContactForm = () => {
 		resolver: yupResolver(schema),
 	});
 
-	const onSubmit: any = (data: []) => {
+	type Data = {
+		fullName: string;
+		email: string;
+		age: number;
+		password: string;
+		confirmPassword: string;
+	};
+
+	const onSubmit: any = (data: Data[]) => {
+		// TODO: apply proper type/interface, hard because of Yup?
 		console.log(data);
 	};
 	return (

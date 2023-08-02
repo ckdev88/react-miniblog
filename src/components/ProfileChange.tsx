@@ -12,7 +12,7 @@ const ProfileChange = () => {
 	};
 	return (
 		<div>
-			<h2>Change profile</h2>
+			<h2>Change profile for {username}</h2>
 			<input
 				type="text"
 				onChange={(event) => {

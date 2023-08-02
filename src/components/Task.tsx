@@ -1,10 +1,10 @@
-interface Props {
+type Props = {
 	id: number;
 	name: string;
 	isCompleted: boolean;
-	completeTask: any;
-	removeTask: any;
-}
+	completeTask(id: number): void;
+	removeTask(id: number): void;
+};
 
 export const Task = (props: Props) => {
 	return (
