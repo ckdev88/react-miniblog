@@ -6,21 +6,26 @@ const Agefetch = () => {
 	let { username } = useContext(AppContext);
 	const { data, refetchData, isLoading, isError } = useAgeFetch(username);
 
-	if (username !== data.name) {
-		refetchData(username);
+	if (username !== data?.name) {
+		refetchData();
 	}
 	return (
 		<div>
-			<h2>What's my age again? {data?.fact}</h2>
+			<h2>What's my age again?</h2>
 			<div className="text-xl">
 				{isLoading && <p>...</p>}
 				{isError && <p>kapot?</p>}
 				{!isLoading && !isError ? (
 					<p>
-						{username}, are you {data?.age} years old?
+						{data?.name}, are you {data?.age} years old?
 					</p>
 				) : (
-					<p></p>
+					<></>
+				)}
+				{username !== data?.name ? (
+					<button onClick={refetchData}>Refresh</button>
+				) : (
+					<></>
 				)}
 			</div>
 		</div>
