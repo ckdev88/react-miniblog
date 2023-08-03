@@ -1,23 +1,15 @@
 import { SetStateAction, useState } from "react";
 import { Task } from "./Task";
 
-// type TodoList = {
-// 	todoList: [];
-// 	setTodoList: [];
-// 	setTodoList(todoList: []): [];
-// };
 interface TaskInterface {
 	id: number;
 	taskName: string;
 	isCompleted: boolean;
 }
-// interface TaskInterface2 {
-// 	[]: any;
-// }
 
 export default function Tasks() {
 	const [todoList, setTodoList] = useState<TaskInterface[]>([]); // TODO: apply proper type/interface
-	const [newTask, setNewTask] = useState("");
+	const [newTask, setNewTask] = useState<string>("");
 
 	const handleChangeFunction = (event: {
 		target: { value: SetStateAction<string> };

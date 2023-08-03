@@ -6,7 +6,7 @@ interface Props {
 	profession: string;
 }
 const Person = (props: Props) => {
-	const gender = props.gender;
+	const gender: string = props.gender;
 	if (gender === "F") {
 		return (
 			<li key={props.id} className="bg-pink-500 p-1">

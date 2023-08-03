@@ -11,7 +11,7 @@ export const AppContext = createContext<AppContextType>({} as AppContextType);
 
 function App() {
 	const client = new QueryClient();
-	const [username, setUsername] = useState("Anonymous");
+	const [username, setUsername] = useState<string>("Anonymous");
 	return (
 		<QueryClientProvider client={client}>
 			<AppContext.Provider value={{ username, setUsername }}>

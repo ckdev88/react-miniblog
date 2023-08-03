@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Text = (props: Props) => {
-	const [text, setText] = useState("");
+	const [text, setText] = useState<string>("");
 	useEffect(() => {
 		console.log("COMPONENT MOUNTED");
 

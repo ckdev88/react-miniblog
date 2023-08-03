@@ -4,8 +4,8 @@ import { AppContext } from "../App";
 
 const ProfileChange = () => {
 	const { username, setUsername } = useContext(AppContext);
-	const [newUsername, setNewUsername] = useState("");
-	const [status, setStatus] = useState("");
+	const [newUsername, setNewUsername] = useState<string>("");
+	const [status, setStatus] = useState<string>("");
 	const updateUsername = (newUsername: string) => {
 		setUsername(newUsername);
 		setStatus("Updated!");
