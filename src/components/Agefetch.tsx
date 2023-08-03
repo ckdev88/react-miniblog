@@ -1,33 +1,28 @@
-import { useState, useEffect } from "react";
-const Agefetch = () => {
-	const [name, setName] = useState("");
-	const [age, setAge] = useState(0);
+import { useContext } from "react";
+import { AppContext } from "../App";
+import useAgeFetch from "./hooks/useAgeFetch";
 
-	const fetchAge = () => {
-		fetch(`https://api.agify.io/?name=${name}`)
-			.then((res) => res.json())
-			.then((data) => {
-				setAge(data.age);
-			});
-	};
-	useEffect(() => {
-		fetchAge();
-	}, []);
+const Agefetch = () => {
+	let { username } = useContext(AppContext);
+	const { data, refetchData, isLoading, isError } = useAgeFetch(username);
+
+	if (username !== data.name) {
+		refetchData(username);
+	}
 	return (
 		<div>
-			<h2>What's my age again?</h2>
-			<input
-				type="text"
-				className="rounded-md bg-lime text-black p-1"
-				placeholder="Type your name"
-				onChange={(event) => {
-					setName(event.target.value);
-				}}
-			/>
-			<button onClick={fetchAge}>Predict age</button>
-			<p>
-				Predicted age of <b>{name}</b>: {age}
-			</p>
+			<h2>What's my age again? {data?.fact}</h2>
+			<div className="text-xl">
+				{isLoading && <p>...</p>}
+				{isError && <p>kapot?</p>}
+				{!isLoading && !isError ? (
+					<p>
+						{username}, are you {data?.age} years old?
+					</p>
+				) : (
+					<p></p>
+				)}
+			</div>
 		</div>
 	);
 };

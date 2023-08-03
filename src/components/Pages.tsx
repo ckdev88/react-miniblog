@@ -10,7 +10,7 @@ import Misc from "../pages/Misc";
 
 export default function Pages() {
 	return (
-		<div className=" text-black ">
+		<div className=" text-black pb-10">
 			<BrowserRouter>
 				<Navbar />
 				<main>
