@@ -86,3 +86,25 @@ nav a {
 nav a:hover {
 	text-shadow: -1px -1px 0 white;
 }
+
+.tracklist {
+	display: grid;
+}
+@media screen and (min-width: 1100px) {
+	.tracklist {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+}
+.tracklist li,
+.tracklist .thead {
+	display: grid;
+}
+.tracklist .thead,
+.tracklist li {
+	grid-template-columns: 3fr 3fr 1fr;
+}
+.tracklist .thead div,
+.tracklist li span {
+	text-align: left;
+}

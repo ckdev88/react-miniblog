@@ -4,7 +4,7 @@ import TrackListHead from "../components/TrackListHead";
 const Tracks = () => {
 	return (
 		<div className="tracklist">
-			<>Tracklist hier</>
+			<h1>List of tracks</h1>
 			<TrackListHead />
 			<Tracklist />
 		</div>

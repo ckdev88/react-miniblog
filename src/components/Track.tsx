@@ -1,17 +1,17 @@
-interface Props {
+type Props = {
 	id: number;
 	artist: string;
 	title: string;
 	tempo: number;
-}
+};
 
 const Track = (props: Props) => {
 	return (
-		<div>
-			<div>
-				{props.id} {props.artist} {props.title} {props.tempo}
-			</div>
-		</div>
+		<li key={props.id}>
+			<span>{props.artist}</span>
+			<span>{props.title}</span>
+			<span>{props.tempo}</span>
+		</li>
 	);
 };
 export default Track;

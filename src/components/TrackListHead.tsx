@@ -1,11 +1,10 @@
 const TrackListHead = () => {
 	return (
 		<>
-			<div className="thead">
-				<div>Col1</div>
-				<div>Col2</div>
-				<div>Col3</div>
-				<div>Col4</div>
+			<div className="thead font-bold">
+				<div>Artist</div>
+				<div>Title</div>
+				<div>Flames</div>
 			</div>
 		</>
 	);
