@@ -1,4 +1,6 @@
 import Person from "./Person";
+// import useEffect from "React"
+
 import { people } from "../data/people";
 
 const List = () => {

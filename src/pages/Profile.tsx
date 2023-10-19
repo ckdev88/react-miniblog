@@ -1,5 +1,5 @@
 import Profile from "../components/Profile";
-import Agefetch from "../components/Agefetch";
+	import Agefetch from "../components/Agefetch";
 
 const ProfilePage = () => {
 	return (

@@ -18,12 +18,10 @@ function App() {
 				<div className="App bg-zinc-200 h-100">
 					<header className="App-header py-3 mb-0 my-auto">
 						<strong className="text-3xl overline uppercase font-extrabold block">
-							Aloha!
-						</strong>
+							Aloha</strong>
 					</header>
 					<Pages />
-				</div>
-			</AppContext.Provider>
+				</div></AppContext.Provider>
 		</QueryClientProvider>
 	);
 }
